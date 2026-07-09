@@ -1,1 +1,19 @@
+<html>
+  <head>
+    <title>hi</title>
+  </head>
+  <body>
+    <p id="count">money: 0</p>
+    <button id="button">click</button>
+  </body>
+  <script>
+    count = document.getELementById("count")
+    click = document.getELementById("button")
+    let num = 0
 
+    click.onclick = function() {
+      num += 1
+      count.innerText = `money ${num}`
+    }
+  </script>
+</html>
